@@ -1,0 +1,82 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #667eea 25%, #764ba2 75%);
+    min-height: 100vh;
+    }
+
+    .scene {
+    display: none;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.5s ease;
+    }
+
+    .scene.active {
+    display: block;
+    }
+    
+    .scene-image {
+            width: 100%;
+            max-width: 620px;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+    
+    @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }
+
+    h2 {
+    color: #2d3748;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 600;
+    }
+
+    p {
+    color: #4a5568;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    }
+
+    button {
+    display: block;
+    width: 100%;
+    margin: 12px 0;
+    padding: 15px 25px;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    background: linear-gradient(135deg, #667eea 25%, #764ba2 75%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    }
+
+    button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+    }
+
+    button:active {
+    transform: translateY(0);
+    }   
